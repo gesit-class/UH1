@@ -1,74 +1,150 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Soal nomor 1 UH</title>
+    <title>🔥 UH TIK CC🔥</title>
+    <style>
+        body {
+            background-color: black;
+            background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+            color: lime;
+            font-family: "Comic Sans MS", cursive;
+            text-align: center;
+        }
+
+        .container {
+            width: 800px;
+            margin: auto;
+            border: 5px double yellow;
+            padding: 20px;
+            background-color: #000080;
+        }
+
+        h1 {
+            color: yellow;
+            text-shadow: 2px 2px red;
+        }
+
+        .marquee {
+            color: cyan;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border: 3px solid white;
+            background-color: black;
+        }
+
+        th {
+            background-color: red;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid white;
+            padding: 10px;
+        }
+
+        .price {
+            color: yellow;
+            font-weight: bold;
+        }
+
+        .btn {
+            background-color: lime;
+            color: black;
+            border: 3px outset white;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: yellow;
+        }
+
+        .counter {
+            margin-top: 20px;
+            font-size: 14px;
+            color: white;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: silver;
+        }
+    </style>
 </head>
+<body>
 
-<body bgcolor="#f2f2f2" text="#000000">
+<div class="container">
 
-    <center>
-        <h1>InstaPhoto</h1>
-        <p>Share your photos with friends</p>
-        <hr width="800">
-    </center>
+    <h1>🛍️ TOKO ONLINE SUPER KEREN 1999 🛍️</h1>
 
-    <table width="800" align="center" border="1" cellpadding="10" bgcolor="#ffffff">
-        <tr bgcolor="#dddddd">
-            <td colspan="2">
-                <b>Home</b> |
-                <a href="#">Profile</a> |
-                <a href="#">Upload Photo</a> |
-                <a href="#">Logout</a>
-            </td>
+    <marquee class="marquee">
+        ✨ SELAMAT DATANG DI TOKO ONLINE PALING CANGGIH DI INTERNET ✨
+    </marquee>
+
+    <br><br>
+
+    <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="200">
+
+    <br><br>
+
+    <table>
+        <tr>
+            <th>Produk</th>
+            <th>Gambar</th>
+            <th>Harga</th>
+            <th>Beli</th>
         </tr>
 
         <tr>
-            <!-- SIDEBAR -->
-            <td width="200" valign="top">
-                <b>User Profile</b><br><br>
-                Username: <b>johndoe</b><br>
-                Posts: 12<br>
-                Followers: 80<br>
-                Following: 45<br><br>
-
-                <b>Menu</b><br>
-                <a href="#">My Photos</a><br>
-                <a href="#">Friends</a><br>
-                <a href="#">Settings</a>
-            </td>
-
-            <!-- CONTENT -->
-            <td valign="top">
-                <b>Recent Photos</b>
-                <hr>
-
-                <p>
-                    <b>johndoe</b><br>
-                    <img src="https://via.placeholder.com/300x200" border="1"><br>
-                    This is my first photo!
-                </p>
-
-                <hr>
-
-                <p>
-                    <b>janedoe</b><br>
-                    <img src="https://via.placeholder.com/300x200" border="1"><br>
-                    Vacation memory :)
-                </p>
-            </td>
+            <td>Handphone Nokia Jadul</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Nokia_3310_blue.jpg" width="100"></td>
+            <td class="price">Rp 299.000</td>
+            <td><button class="btn" onclick="beliProduk('Nokia Jadul')">BELI SEKARANG</button></td>
         </tr>
 
-        <tr bgcolor="#dddddd">
-            <td colspan="2" align="center">
-                <small>
-                    InstaPhoto © 2006<br>
-                    Contact: support@instaphoto.com
-                </small>
-            </td>
+        <tr>
+            <td>Kaset Walkman</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Compactcassette.jpg" width="100"></td>
+            <td class="price">Rp 49.000</td>
+            <td><button class="btn" onclick="beliProduk('Kaset Walkman')">BELI SEKARANG</button></td>
         </tr>
-    </table> 
+
+        <tr>
+            <td>CD Game PC</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Compact_disc.jpg" width="100"></td>
+            <td class="price">Rp 79.000</td>
+            <td><button class="btn" onclick="beliProduk('CD Game PC')">BELI SEKARANG</button></td>
+        </tr>
+
+    </table>
+
+    <div class="counter">
+        👀 Pengunjung ke:
+        <span id="visitorCount">0001</span>
+    </div>
+
+    <div class="footer">
+        © 1999 Toko Online Super Keren | Dibuat dengan HTML murni 💾<br>
+        Best viewed in 800x600 resolution using Internet Explorer 5.0
+    </div>
+
+</div>
+
+<script>
+    function beliProduk(namaProduk) {
+        alert("Terima kasih telah membeli " + namaProduk + "!\nAdmin akan menghubungi Anda via Yahoo Messenger 😎");
+    }
+
+    // Fake visitor counter
+    let count = Math.floor(Math.random() * 9000) + 1000;
+    document.getElementById("visitorCount").innerText = count;
+</script>
 
 </body>
 </html>
-
-
